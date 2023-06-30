@@ -3,7 +3,7 @@ import csv
 
 # Possible words to pick from. Might update this someday into a dictionary that teaches the word after it is discovered (Maybe with categories too :D)
 words = {}
-with open("words.csv",'r') as file:
+with open("Computer_Science_Hangman_Game/words.csv",'r') as file:
     reader = csv.reader(file, delimiter="#")
     for row in reader:
         key = row[0]
