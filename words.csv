@@ -1,0 +1,15 @@
+word#definition
+STACK#A data structure that follows the Last-In-First-Out (LIFO) principle, where elements are added or removed from one end called the "top" of the stack.
+QUEUE#A data structure that follows the First-In-First-Out (FIFO) principle, where elements are added at one end called the "rear" and removed from the other end called the "front" of the queue.
+LIST#A collection of elements that can be of different types and are stored in a specific order. Lists allow for easy access, insertion, and deletion of elements.
+TREE#A hierarchical data structure consisting of nodes connected by edges. It has a root node at the top and child nodes branching out from it. Trees are used to represent hierarchical relationships.
+HEAP#A specialized tree-based data structure that satisfies the heap property. It is commonly used to efficiently retrieve the maximum or minimum element from a collection.
+ALGORITHM#A step-by-step procedure or a set of rules for solving a specific problem. Algorithms provide a clear sequence of instructions to solve problems efficiently.
+COMPUTER#An electronic device capable of executing instructions, performing calculations, and storing and processing data. Computers are used for various tasks such as data processing, communication, and running software programs.
+PSEUDOCODE#A high-level description of a program or algorithm that uses a mixture of natural language and programming language constructs. It helps in planning and understanding the logic of a solution without being tied to a specific programming language.
+PYTHON#A popular high-level programming language known for its simplicity and readability. Python is widely used for various applications, including web development, data analysis, artificial intelligence, and automation.
+JAVA#A widely adopted object-oriented programming language known for its platform independence. Java is used for building applications ranging from desktop software to enterprise-level systems.
+PROGRAMMING#The process of writing instructions for a computer to perform a specific task. Programming involves designing algorithms, writing code, testing, and debugging to create software applications.
+HARDWARE#The physical components of a computer system, including the processor, memory, storage devices, input/output devices, and other peripheral devices.
+SOFTWARE#The programs, data, and instructions that run on a computer system. It includes applications, operating systems, utilities, and other software components.
+DATABASE#A structured collection of data organized and stored in a way that enables efficient retrieval, management, and manipulation of the data. Databases are commonly used for storing and accessing large amounts of structured information.

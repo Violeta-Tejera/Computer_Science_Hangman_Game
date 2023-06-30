@@ -1,7 +1,15 @@
 from random import choice
+import csv
 
 # Possible words to pick from. Might update this someday into a dictionary that teaches the word after it is discovered (Maybe with categories too :D)
-words = ["STACK", "QUEUE", "LIST", "TREE", "HEAP", "ALGORITHM", "COMPUTER", "PSEUDOCODE", "PYTHON", "JAVA", "PROGRAMMING", "HARDWARE", "SOFTWARE"]
+words = {}
+with open("words.csv",'r') as file:
+    reader = csv.reader(file, delimiter="#")
+    for row in reader:
+        key = row[0]
+        value = row[1]
+        words[key] = value        
+
 correct_letters = [] # Correct letters the player has guessed
 incorrect_letters = [] # Incorrect letters the player has tried
 unique_letters = [] # Letters present in the word
@@ -11,7 +19,7 @@ end_game = False
 
 # This function picks a random word from the possible ones and appends the letters present in the word to the list unique_letters
 def choose_word():
-    word = choice(words)
+    word = choice(list(words.keys()))
     for i in range(0, len(word)):
         if word[i] not in unique_letters:
             unique_letters.append(word[i])
