@@ -1,14 +1,14 @@
 from random import choice
 import csv
 
-# Possible words to pick from. Might update this someday into a dictionary that teaches the word after it is discovered (Maybe with categories too :D)
+# Possible words to pick from. 
 words = {}
 with open("Computer_Science_Hangman_Game/words.csv",'r') as file:
     reader = csv.reader(file, delimiter="#")
     for row in reader:
-        key = row[0]
-        value = row[1]
-        words[key] = value        
+        term = row[0]
+        definition = row[1]
+        words[term] = definition        
 
 correct_letters = [] # Correct letters the player has guessed
 incorrect_letters = [] # Incorrect letters the player has tried
@@ -64,13 +64,15 @@ def check_letter(letter, word, lives, right_guesses):
 # Prints some game over messages and ends the game.
 def lose():
     print("You have run out of lives")
-    print("Hidden word was " +word)
+    print("Hidden word was: ")
+    print_word()
     end_game = True
 
 # Prints some game over messages and ends the game.
 def win(word):
     display_progress()
     print("You have discovered the word")
+    print_word()
     end_game = True
 
 # Prints the word with underscores in not discovered letters
@@ -87,6 +89,11 @@ def display_progress():
 
 word, unique_letters = choose_word()
 unique_letters_quantity = len(unique_letters)
+
+def print_word():
+    print("\n" + "-" * 30 + "\n")
+    print(f"{word}: {words[word]}")
+    print("\n" + "-" * 30 + "\n")
 
 # Main program
 while end_game == False:
