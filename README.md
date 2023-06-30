@@ -3,7 +3,7 @@
 
 ![image](https://github.com/Violeta-Tejera/Computer_Science_Hangman_Game/assets/80209320/70eba58a-273a-49a0-ac21-1ab4339f9cd4)
 
-This game is aimed for people with bare computer science knowledge so that through gamification they can learn more about some computer science concepts and definitions.
+This game is aimed for people with bare computer science knowledge so that through gamification they can learn more about some computer science concepts and definitions. Please note that these definitions are too shallow in order to just provide basic understanding of the concepts. There is much more depth and detail to each of them.
 
 ## Contributing
 
