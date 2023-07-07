@@ -3,7 +3,7 @@ import csv
 
 # Possible words to pick from. 
 words = {}
-with open("Computer_Science_Hangman_Game/words.csv",'r') as file:
+with open("words.csv",'r') as file:
     reader = csv.reader(file, delimiter="#")
     for row in reader:
         term = row[0]
@@ -22,7 +22,8 @@ def choose_word():
     word = choice(list(words.keys()))
     for i in range(0, len(word)):
         if word[i] not in unique_letters:
-            unique_letters.append(word[i])
+            if word[i] != ' ':
+                unique_letters.append(word[i])
 
     return word, unique_letters
 
@@ -83,7 +84,10 @@ def display_progress():
         if letter in correct_letters:
             progress.append(letter)
         else:
-            progress.append('_')
+            if letter == ' ':
+                progress.append(' ')
+            else:
+                progress.append('_')
 
     print(" ".join(progress))
 
