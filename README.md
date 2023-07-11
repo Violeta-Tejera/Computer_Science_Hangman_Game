@@ -1,6 +1,3 @@
-#### Video Demo:  https://youtu.be/IPYNx1XkYEk
-#### Description: CS50 Final Project
-
 # Computer Science Hangman Game
 
 ![image](https://github.com/Violeta-Tejera/Computer_Science_Hangman_Game/assets/80209320/70eba58a-273a-49a0-ac21-1ab4339f9cd4)
@@ -20,7 +17,7 @@ This will show the game in the command prompt and will allow it to play it.
 
 ## Tech Stack
 
-The whole project is programmed in Python and no additional technologies or languages were used.
+The whole project is programmed in Python and no additional technologies or languages were used. The main reason behind this is that I want users not only to learn CS theory but also for them to be able to understand my code if it is their first approach to programming. That's why I also chose Python.
 
 ## Feedback & Support
 
